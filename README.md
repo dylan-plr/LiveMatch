@@ -74,6 +74,8 @@ jQuery.onMatch(":input.readonlyInput", function() {
 
 ## Limitations
 
+- LiveMatch ne permet pas l’appel d’une fonction handler lorsqu’un élément ne correspond plus à un sélecteur.
+
 - Chaque fonction handler définie via la méthode `.onMatch()` ne s’exécute qu’une fois par élément.
 Si un même élément correspond à nouveau à un sélecteur, sa fonction handler associée ne sera pas exécutée à nouveau.
 
