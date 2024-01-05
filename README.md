@@ -79,39 +79,39 @@ jQuery.onMatch(":input.readonlyInput", function() {
 - Chaque fonction handler définie via la méthode `.onMatch()` ne s’exécute qu’une fois par élément.
 Si un même élément correspond à nouveau à un sélecteur, sa fonction handler associée ne sera pas exécutée à nouveau.
 
-```html
-<div></div>
-<div></div>
-```
+    ```html
+    <div></div>
+    <div></div>
+    ```
 
-```jsx
-jQuery.onMatch(".myClass", function() {
-    console.log("match!");
-});
+    ```jsx
+    jQuery.onMatch(".myClass", function() {
+        console.log("match!");
+    });
+    
+    jQuery("div").addclass("myClass"); // console.log("match!"); est exécuté 2 fois
+    jQuery("div").removeClass("myClass");
+    jQuery("div").addclass("myClass"); // la fonction handler est ignorée
+    ```
 
-jQuery("div").addclass("myClass"); // console.log("match!"); est exécuté 2 fois
-jQuery("div").removeClass("myClass");
-jQuery("div").addclass("myClass"); // la fonction handler est ignorée
-```
-
-**Console :**
-
-```
-match!
-match!
-```
+    **Console :**
+    
+    ```
+    match!
+    match!
+    ```
 
 ## Spécificités
 
 - La méthode `.onMatch()` s’applique uniquement sur l’objet global jQuery.
 
-```jsx
-// Syntaxe VALIDE
-jQuery.onMatch(".myClass", handler);
-
-// Syntaxe INVALIDE
-jQuery(".myClass").onMatch(".myClass", handler);
-```
+    ```jsx
+    // Syntaxe VALIDE
+    jQuery.onMatch(".myClass", handler);
+    
+    // Syntaxe INVALIDE
+    jQuery(".myClass").onMatch(".myClass", handler);
+    ```
 
 ## **Dépendances**
 
