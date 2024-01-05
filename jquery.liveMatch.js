@@ -7,8 +7,6 @@
  *
  * More details: https://github.com/dylan-plr/LiveMatch.git
  * Requires jQuery v1.7 or later
- * @Date: January 2024
- * @Author: dylan
  */
 
 (function ( $ ) {
@@ -20,8 +18,6 @@
      * @param {[MutationRecord]} mutationsList - An array of MutationRecord objects, describing each change that occurred
      */
     function handleMutations(mutationsList) {
-        // console.log(selectorsAndHandlers);
-        // console.log(handlersHistory);
         for (const mutation of mutationsList) {
             // if one or more nodes are added to the DOM
             if (mutation.type === 'childList') {
