@@ -76,6 +76,7 @@
         $(selector).each(function(){
             runHandlers(this);
         });
+        return this;
     }
 
     const observer = new MutationObserver(handleMutations);
