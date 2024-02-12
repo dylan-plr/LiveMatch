@@ -14,7 +14,7 @@ LiveMatch se veut un remplacement du plugin [livequery](https://plugins.jquery.c
 La fonction permettant d’associer une fonction handler à un sélecteur.
 
 ```jsx
-void onMatch( string selector, function handler );
+void onMatch( selector, handler );
 ```
 
 ### Paramètres
