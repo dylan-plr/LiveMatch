@@ -21,7 +21,7 @@ void onMatch( string selector, function handler );
 
 `selector`
 
-Une chaîne de caractères représentant un sélecteur jQuery. 
+Un sélecteur jQuery. 
 
 `handler`
 
