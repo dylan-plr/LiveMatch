@@ -1,6 +1,6 @@
 # Live Match
 
-LiveMatch est un plugin jQuery permettant l'exécution d'une fonction callback associée à un sélecteur jQuery lors de l’ajout au document d’un élément correspondant.
+LiveMatch est un plugin jQuery permettant l'exécution d'une fonction callback sur un élément html lors de son ajout au document.
 
 Il agit sur les éléments déjà présents au chargement de la page et sur ceux ajoutés dynamiquement. 
 
