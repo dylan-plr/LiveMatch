@@ -1,11 +1,10 @@
 /**
  * jQuery LiveMatch Plugin
  *
- * LiveMatch makes use of the javascript MutationObserver class and jQuery selectors to automatically execute
- * callbacks for matched elements, handling already existing elements as well as
- * dynamically added elements.
+ * LiveMatch makes use of the javascript MutationObserver class to execute callback functions on
+ * new elements added to the DOM that match a specific jQuery selector.
+ * It handles already existing elements as well as dynamically added elements.
  *
- * More details: https://github.com/dylan-plr/LiveMatch.git
  * Requires jQuery v1.7 or later
  */
 
@@ -68,7 +67,7 @@
 
     /**
      * Execute the given handler function on new elements that matches the given selector, now and in the future
-     * @param {string} selector - The selector to match against
+     * @param {selector} selector - The selector to match against
      * @param {Function} handler - The handler function to execute
      */
     $.onMatch = function(selector, handler){
